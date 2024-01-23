@@ -14,6 +14,7 @@ const useServerIP = () => {
     setServerCheckProgress(null);
   };
   const checkDevices = async (ip: string | null) => {
+    console.log('Local IP: ', ip);
     resetState();
     if (!ip || serverCheckProgress) {
       return;
