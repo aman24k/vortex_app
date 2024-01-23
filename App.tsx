@@ -162,8 +162,8 @@ const App = () => {
               sdpMLineIndex: message.label,
             }),
           )
-          .then(data => {
-            console.log('SUCCESS');
+          .then(data2 => {
+            console.log('SUCCESS', data2);
           })
           .catch(err => {
             console.log('Error', err);
